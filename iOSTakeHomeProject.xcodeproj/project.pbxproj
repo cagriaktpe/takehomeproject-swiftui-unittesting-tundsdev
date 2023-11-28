@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815699862B15F1100086AF70 /* JsonMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815699852B15F1100086AF70 /* JsonMapperTests.swift */; };
 		E713B7672865C23000149D67 /* UsersStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = E713B7662865C23000149D67 /* UsersStaticData.json */; };
 		E713B7692865C26D00149D67 /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = E713B7682865C26D00149D67 /* SingleUserData.json */; };
 		E713B76B2865C35100149D67 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E713B76A2865C35100149D67 /* UserDetailResponse.swift */; };
@@ -47,7 +48,19 @@
 		E7E8A935289E6B65006B1863 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A934289E6B65006B1863 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8156997F2B15F0B60086AF70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E76BA903285DB76D00D49AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76BA90A285DB76D00D49AEF;
+			remoteInfo = iOSTakeHomeProject;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8156997B2B15F0B60086AF70 /* iOSTakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		815699852B15F1100086AF70 /* JsonMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMapperTests.swift; sourceTree = "<group>"; };
 		E713B7662865C23000149D67 /* UsersStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersStaticData.json; sourceTree = "<group>"; };
 		E713B7682865C26D00149D67 /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 		E713B76A2865C35100149D67 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
@@ -91,6 +104,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		815699782B15F0B60086AF70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E76BA908285DB76D00D49AEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +121,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8156997C2B15F0B60086AF70 /* iOSTakeHomeProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				815699842B15F0E50086AF70 /* Mapper */,
+			);
+			path = iOSTakeHomeProjectTests;
+			sourceTree = "<group>";
+		};
+		815699842B15F0E50086AF70 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				815699852B15F1100086AF70 /* JsonMapperTests.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		E713B7652865C1EE00149D67 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				E76BA90D285DB76D00D49AEF /* iOSTakeHomeProject */,
+				8156997C2B15F0B60086AF70 /* iOSTakeHomeProjectTests */,
 				E76BA90C285DB76D00D49AEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -186,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				E76BA90B285DB76D00D49AEF /* iOSTakeHomeProject.app */,
+				8156997B2B15F0B60086AF70 /* iOSTakeHomeProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -431,6 +469,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8156997A2B15F0B60086AF70 /* iOSTakeHomeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815699812B15F0B60086AF70 /* Build configuration list for PBXNativeTarget "iOSTakeHomeProjectTests" */;
+			buildPhases = (
+				815699772B15F0B60086AF70 /* Sources */,
+				815699782B15F0B60086AF70 /* Frameworks */,
+				815699792B15F0B60086AF70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				815699802B15F0B60086AF70 /* PBXTargetDependency */,
+			);
+			name = iOSTakeHomeProjectTests;
+			productName = iOSTakeHomeProjectTests;
+			productReference = 8156997B2B15F0B60086AF70 /* iOSTakeHomeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E76BA90A285DB76D00D49AEF /* iOSTakeHomeProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E76BA919285DB76E00D49AEF /* Build configuration list for PBXNativeTarget "iOSTakeHomeProject" */;
@@ -455,9 +511,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					8156997A2B15F0B60086AF70 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E76BA90A285DB76D00D49AEF;
+					};
 					E76BA90A285DB76D00D49AEF = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -477,11 +537,19 @@
 			projectRoot = "";
 			targets = (
 				E76BA90A285DB76D00D49AEF /* iOSTakeHomeProject */,
+				8156997A2B15F0B60086AF70 /* iOSTakeHomeProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		815699792B15F0B60086AF70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E76BA909285DB76D00D49AEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,6 +564,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		815699772B15F0B60086AF70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815699862B15F1100086AF70 /* JsonMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E76BA907285DB76D00D49AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,7 +615,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		815699802B15F0B60086AF70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76BA90A285DB76D00D49AEF /* iOSTakeHomeProject */;
+			targetProxy = 8156997F2B15F0B60086AF70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		815699822B15F0B60086AF70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6WDBVB643;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sametcagriaktepe.iOSTakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTakeHomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSTakeHomeProject";
+			};
+			name = Debug;
+		};
+		815699832B15F0B60086AF70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6WDBVB643;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sametcagriaktepe.iOSTakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTakeHomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSTakeHomeProject";
+			};
+			name = Release;
+		};
 		E76BA917285DB76E00D49AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -715,6 +848,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		815699812B15F0B60086AF70 /* Build configuration list for PBXNativeTarget "iOSTakeHomeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815699822B15F0B60086AF70 /* Debug */,
+				815699832B15F0B60086AF70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E76BA906285DB76D00D49AEF /* Build configuration list for PBXProject "iOSTakeHomeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
