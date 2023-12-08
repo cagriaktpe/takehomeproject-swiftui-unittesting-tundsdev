@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		815467412B1B1E4E00036070 /* CreateFormValidatortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815467402B1B1E4E00036070 /* CreateFormValidatortTests.swift */; };
 		815699862B15F1100086AF70 /* JsonMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815699852B15F1100086AF70 /* JsonMapperTests.swift */; };
+		81E3FEB82B23091100BA3D7F /* NetworkingEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FEB72B23091100BA3D7F /* NetworkingEndpointTests.swift */; };
+		81E3FEC32B232CA600BA3D7F /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FEC22B232CA600BA3D7F /* MockURLSessionProtocol.swift */; };
+		81E3FEC62B23301300BA3D7F /* NetworkingManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FEC52B23301300BA3D7F /* NetworkingManagerTests.swift */; };
 		E713B7672865C23000149D67 /* UsersStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = E713B7662865C23000149D67 /* UsersStaticData.json */; };
 		E713B7692865C26D00149D67 /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = E713B7682865C26D00149D67 /* SingleUserData.json */; };
 		E713B76B2865C35100149D67 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E713B76A2865C35100149D67 /* UserDetailResponse.swift */; };
@@ -63,6 +66,9 @@
 		815467402B1B1E4E00036070 /* CreateFormValidatortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFormValidatortTests.swift; sourceTree = "<group>"; };
 		8156997B2B15F0B60086AF70 /* iOSTakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		815699852B15F1100086AF70 /* JsonMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMapperTests.swift; sourceTree = "<group>"; };
+		81E3FEB72B23091100BA3D7F /* NetworkingEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingEndpointTests.swift; sourceTree = "<group>"; };
+		81E3FEC22B232CA600BA3D7F /* MockURLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionProtocol.swift; sourceTree = "<group>"; };
+		81E3FEC52B23301300BA3D7F /* NetworkingManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManagerTests.swift; sourceTree = "<group>"; };
 		E713B7662865C23000149D67 /* UsersStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersStaticData.json; sourceTree = "<group>"; };
 		E713B7682865C26D00149D67 /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 		E713B76A2865C35100149D67 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 		8156997C2B15F0B60086AF70 /* iOSTakeHomeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				81E3FEB52B2308D500BA3D7F /* Networking2 */,
 				8154673F2B1B1E0200036070 /* Form */,
 				815699842B15F0E50086AF70 /* Mapper */,
 			);
@@ -146,6 +153,40 @@
 				815699852B15F1100086AF70 /* JsonMapperTests.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		81E3FEB52B2308D500BA3D7F /* Networking2 */ = {
+			isa = PBXGroup;
+			children = (
+				81E3FEC42B232FEC00BA3D7F /* NetworkingManager */,
+				81E3FEC12B232C5E00BA3D7F /* Mocks */,
+				81E3FEB62B2308EF00BA3D7F /* Endpoint */,
+			);
+			path = Networking2;
+			sourceTree = "<group>";
+		};
+		81E3FEB62B2308EF00BA3D7F /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				81E3FEB72B23091100BA3D7F /* NetworkingEndpointTests.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		81E3FEC12B232C5E00BA3D7F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				81E3FEC22B232CA600BA3D7F /* MockURLSessionProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		81E3FEC42B232FEC00BA3D7F /* NetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				81E3FEC52B23301300BA3D7F /* NetworkingManagerTests.swift */,
+			);
+			path = NetworkingManager;
 			sourceTree = "<group>";
 		};
 		E713B7652865C1EE00149D67 /* JSON */ = {
@@ -579,8 +620,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E3FEC62B23301300BA3D7F /* NetworkingManagerTests.swift in Sources */,
 				815699862B15F1100086AF70 /* JsonMapperTests.swift in Sources */,
 				815467412B1B1E4E00036070 /* CreateFormValidatortTests.swift in Sources */,
+				81E3FEC32B232CA600BA3D7F /* MockURLSessionProtocol.swift in Sources */,
+				81E3FEB82B23091100BA3D7F /* NetworkingEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
